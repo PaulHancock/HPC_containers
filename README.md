@@ -4,7 +4,7 @@ Container build scripts to support radio astronomy data processing on HPCs
 
 ## Available containers
 
-- wsclean: includes wsclean
+- [wsclean](https://hub.docker.com/repository/docker/paulhancock/wsclean): includes wsclean
 
 ## Planned software includes
 

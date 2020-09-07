@@ -12,8 +12,13 @@ RUN apt-get -y update && \
                           python3 python3-pip\
                           libopenblas-dev \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-RUN pip3 install astropy numpy scipy matplotlib
+RUN cd /tmp && mkdir wcstools && cd wcstools && \
+    wget http://tdc-www.harvard.edu/software/wcstools/wcstools-3.9.6.tar.gz && \
+    ls && \
+    tar -xzf wcstools-3.9.6.tar.gz && cd wcstools-3.9.6 && \
+    make all CC=gcc && cp bin/* /usr/bin/. && \
+    cd /tmp && rm -rf wcstools*
+RUN pip3 install astropy numpy scipy matplotlib tqdm
 RUN cd /tmp && git clone https://github.com/StevePrabu/RFISeeker.git && \
     cd RFISeeker && python3 setup.py install && cd .. && rm -rf RFISeeker
 

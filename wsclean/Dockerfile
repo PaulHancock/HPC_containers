@@ -44,6 +44,13 @@ RUN git clone "https://git.code.sf.net/p/wsclean/code" \
     && cd build \
     && cmake .. \
     && make -j 8 \
+    && make install \
+    && cd ../../chgcentre \
+    && mkdir -p build \
+    && cd build \
+    && cmake .. \
+    && make -j 8 \
     && make install
+
     
 ENTRYPOINT bash

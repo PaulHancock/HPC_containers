@@ -5,7 +5,7 @@ Container build scripts to support radio astronomy data processing on HPCs
 ## Available containers
 
 - [wsclean](https://hub.docker.com/repository/docker/paulhancock/wsclean)
-  - wsclean 2.9.2, aoflagger 2.10.0, casacore, 
+  - wsclean 2.10.0, aoflagger 2.10.0, casacore, chgcentre (1.6?)
   - python 2.7.17
   - python 3.6.9
 - [Robbie-Next](https://hub.docker.com/r/paulhancock/robbie-next) (external)
@@ -20,8 +20,7 @@ Container build scripts to support radio astronomy data processing on HPCs
   - [wcstools](http://tdc-www.harvard.edu/wcstools/) 3.9.6
 
 ## Planned software includes
-
-- chgcentre : TODO, bundle with wsclean
+- calibrate, apply solutions: part of mwa-reduce
 - cotter : TODO
 - manta-ray : is this needed as container?
 - mwa-pb : is this needed as container?

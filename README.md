@@ -59,6 +59,17 @@ vo2model
      - astropy, numpy, scipy, matplotlib
   - [wcstools](http://tdc-www.harvard.edu/wcstools/) 3.9.6
 
+- pytf
+  - python3.6.3
+    - tensorflow 2.3.0
+    - astropy 4.1
+    - numpy 1.18.5
+    - scipy 1.5.4
+    - matplotlib 3.3.3
+    - pyaml 20.4.0
+    - imageio 2.9.0
+    - jupyter 1.0.0
+
 ## Planned software includes
 - cotter : TODO
 - manta-ray : is this needed as container?

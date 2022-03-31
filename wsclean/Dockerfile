@@ -35,7 +35,9 @@ RUN apt-get -y install git \
                           libpng-dev \
                           libxml++2.6-dev \
                           casacore-dev \
+                          casacore-tools \
                           aoflagger-dev \
+                          bc \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN git clone "https://git.code.sf.net/p/wsclean/code" \
